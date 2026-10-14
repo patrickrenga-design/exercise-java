@@ -22,3 +22,8 @@ const mathStudentNames = students
   .filter((student) => student.subject === "Math")
   .map((student) => student.name);
 console.log(mathStudentNames);
+
+const averageGrade =
+  students.reduce((total, student) => total + student.grade, 0) / students.length;
+console.log(averageGrade);
+
