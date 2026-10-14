@@ -27,3 +27,7 @@ const averageGrade =
   students.reduce((total, student) => total + student.grade, 0) / students.length;
 console.log(averageGrade);
 
+const highestGradeStudent = students.reduce((highest, student) =>
+  student.grade > highest.grade ? student : highest
+);
+console.log(highestGradeStudent);
