@@ -31,3 +31,8 @@ const highestGradeStudent = students.reduce((highest, student) =>
   student.grade > highest.grade ? student : highest
 );
 console.log(highestGradeStudent);
+
+const studentNamesWithGrades = students.map(
+  (student) => `${student.name}: ${student.grade}`
+);
+console.log(studentNamesWithGrades);
