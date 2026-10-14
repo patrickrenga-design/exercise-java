@@ -17,3 +17,8 @@ const students = [
 
 const passedStudents = students.filter((student) => student.passed);
 console.log(passedStudents);
+
+const mathStudentNames = students
+  .filter((student) => student.subject === "Math")
+  .map((student) => student.name);
+console.log(mathStudentNames);
